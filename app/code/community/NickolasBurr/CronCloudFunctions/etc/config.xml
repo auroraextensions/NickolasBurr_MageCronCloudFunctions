@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * config.xml
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt
+ *
+ * @package        NickolasBurr_CronCloudFunctions
+ * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+ * @license        MIT License
+ */
+-->
+<config>
+    <modules>
+        <NickolasBurr_CronCloudFunctions>
+            <version>1.0.0</version>
+        </NickolasBurr_CronCloudFunctions>
+    </modules>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <croncloudfunctions after="Mage_Adminhtml">NickolasBurr_CronCloudFunctions</croncloudfunctions>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <global>
+        <helpers>
+            <croncloudfunctions>
+                <class>NickolasBurr_CronCloudFunctions_Helper</class>
+            </croncloudfunctions>
+        </helpers>
+
+        <blocks>
+            <croncloudfunctions>
+                <class>NickolasBurr_CronCloudFunctions_Block</class>
+            </croncloudfunctions>
+        </blocks>
+
+        <models>
+            <croncloudfunctions>
+                <class>NickolasBurr_CronCloudFunctions_Model</class>
+            </croncloudfunctions>
+        </models>
+    </global>
+
+    <default>
+        <croncloudfunctions>
+            <general>
+                <enable_module>0</enable_module>
+                <gcp_project></gcp_project>
+                <cloud_functions_region>us-central1</cloud_functions_region>
+            </general>
+        </croncloudfunctions>
+    </default>
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NickolasBurr_CronCloudFunctions.xml
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://nickolasburr.github.io/magento/extensions/1.x/croncloudfunctions/LICENSE.txt
+ *
+ * @package        NickolasBurr_CronCloudFunctions
+ * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+ * @license        MIT License
+ */
+-->
+<config>
+    <modules>
+        <NickolasBurr_CronCloudFunctions>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Cron/>
+                <NickolasBurr_GoogleCloud/>
+            </depends>
+        </NickolasBurr_CronCloudFunctions>
+    </modules>
+</config>
