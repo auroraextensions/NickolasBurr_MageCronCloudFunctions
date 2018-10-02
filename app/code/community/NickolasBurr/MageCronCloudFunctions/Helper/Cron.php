@@ -8,23 +8,23 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt
+ * https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package        NickolasBurr_CronCloudFunctions
+ * @package        NickolasBurr_MageCronCloudFunctions
  * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
  * @license        MIT License
  */
 
-class NickolasBurr_CronCloudFunctions_Helper_Cron extends NickolasBurr_CronCloudFunctions_Helper_Data
+class NickolasBurr_MageCronCloudFunctions_Helper_Cron extends NickolasBurr_MageCronCloudFunctions_Helper_Data
 {
     /** @constant XML_PATH_FIELD_MODULE_ENABLE */
-    const XML_PATH_FIELD_MODULE_ENABLE = 'croncloudfunctions/general/enable_module';
+    const XML_PATH_FIELD_MODULE_ENABLE = 'magecroncloudfunctions/general/enable_module';
 
     /** @constant XML_PATH_FIELD_GCP_PROJECT */
-    const XML_PATH_FIELD_GCP_PROJECT = 'croncloudfunctions/general/gcp_project';
+    const XML_PATH_FIELD_GCP_PROJECT = 'magecroncloudfunctions/general/gcp_project';
 
     /** @constant XML_PATH_FIELD_CLOUD_FUNC_REGION */
-    const XML_PATH_FIELD_CLOUD_FUNC_REGION = 'croncloudfunctions/general/cloud_functions_region';
+    const XML_PATH_FIELD_CLOUD_FUNC_REGION = 'magecroncloudfunctions/general/cloud_functions_region';
 
     /**
      * Get Cloud Functions endpoint base URI.
