@@ -9,18 +9,18 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.nickolasburr.com/magento/extensions/1.x/croncloudfunctions/LICENSE.txt
+ * https://docs.nickolasburr.com/magento/extensions/1.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package        NickolasBurr_CronCloudFunctions
+ * @package        NickolasBurr_MageCronCloudFunctions
  * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
  * @license        MIT License
  */
 -->
 <config>
     <modules>
-        <NickolasBurr_CronCloudFunctions>
-            <version>1.0.0</version>
-        </NickolasBurr_CronCloudFunctions>
+        <NickolasBurr_MageCronCloudFunctions>
+            <version>1.0.1</version>
+        </NickolasBurr_MageCronCloudFunctions>
     </modules>
 
     <admin>
@@ -28,7 +28,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <croncloudfunctions after="Mage_Adminhtml">NickolasBurr_CronCloudFunctions</croncloudfunctions>
+                        <magecroncloudfunctions after="Mage_Adminhtml">NickolasBurr_MageCronCloudFunctions</magecroncloudfunctions>
                     </modules>
                 </args>
             </adminhtml>
@@ -37,31 +37,32 @@
 
     <global>
         <helpers>
-            <croncloudfunctions>
-                <class>NickolasBurr_CronCloudFunctions_Helper</class>
-            </croncloudfunctions>
+            <magecroncloudfunctions>
+                <class>NickolasBurr_MageCronCloudFunctions_Helper</class>
+            </magecroncloudfunctions>
         </helpers>
 
         <blocks>
-            <croncloudfunctions>
-                <class>NickolasBurr_CronCloudFunctions_Block</class>
-            </croncloudfunctions>
+            <magecroncloudfunctions>
+                <class>NickolasBurr_MageCronCloudFunctions_Block</class>
+            </magecroncloudfunctions>
         </blocks>
 
         <models>
-            <croncloudfunctions>
-                <class>NickolasBurr_CronCloudFunctions_Model</class>
-            </croncloudfunctions>
+            <magecroncloudfunctions>
+                <class>NickolasBurr_MageCronCloudFunctions_Model</class>
+            </magecroncloudfunctions>
         </models>
     </global>
 
     <default>
-        <croncloudfunctions>
+        <magecroncloudfunctions>
             <general>
                 <enable_module>0</enable_module>
                 <gcp_project></gcp_project>
                 <cloud_functions_region>us-central1</cloud_functions_region>
+                <auth_token></auth_token>
             </general>
-        </croncloudfunctions>
+        </magecroncloudfunctions>
     </default>
 </config>
